@@ -1,14 +1,11 @@
-import input from 'input';
-
-function square(size) {
-    for (let i = 1; i <= size; i += 1) {
-        console.log('X'.repeat(size));
-    } 
+function recursion(i) {
+    for (let i = 0; i <= Infinity; i += 1) {
+        console.log(i);
+    }
 }
 
-async function main() {
-    const size = await input.text('Enter a size.'); 
-    square(size);
+async function main () {
+    recursion(0);
 }
 
 main();
