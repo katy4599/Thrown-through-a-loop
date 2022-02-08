@@ -1,20 +1,46 @@
 import input from 'input';
 
-function pyramid(char, maxHeight) {
-    for (let height = 1; height <= maxHeight; height += 1) {
-        let output = '';
-        for (let len = 0; len < height; len += 1) {
-            output += char
-        }
-        console.log(output);
+function say(num) {
+    switch(num) {
+        case '1':
+            console.log('one');
+            break;    
+        case '2':
+            console.log('two');
+            break; 
+        case '3':
+            console.log('three');
+            break;       
+        case '4':
+            console.log('four');
+            break;    
+        case '5':
+            console.log('five');
+            break;    
+        case '6':
+            console.log('six');
+            break;    
+        case '7':
+            console.log('seven');
+            break; 
+        case '8':
+            console.log('eight');
+            break;       
+        case '9':
+            console.log('nine');
+            break;    
+        case '10':
+            console.log('ten');
+            break; 
+        default:
+            console.log('I do not know that number');  
     }
 }
 
-async function main() {
-    const char = await input.text('What character do you want to use?');
-    const maxHeight = await input.text('How tall do you want the pyramid');
 
-    pyramid(char, maxHeight);
+async function main() {
+    const num = await input.text('Enter a number.');
+    say(num);
 }
 
 main();
