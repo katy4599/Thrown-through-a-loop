@@ -1,7 +1,7 @@
 function recursion(i) {
-    for (let i = 0; i <= Infinity; i += 1) {
-        console.log(i);
-    }
+    if (i > 0);
+    console.log(i)
+    recursion(i + 1);
 }
 
 async function main () {
