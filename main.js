@@ -6,8 +6,7 @@ function square(size) {
         if (i == 0 || i == size) {
             console.log(char.repeat(size));
         } else {
-            let tab = output.repeat(size - 2);
-            console.log(char + tab + char);
+            console.log(char + '\t' + char);
         } 
     }
 }
