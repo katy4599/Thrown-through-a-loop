@@ -1,46 +1,45 @@
 import input from 'input';
 
-function say(num) {
-    switch(num) {
+function say(i) {
+    switch(i) {
         case '1':
-            console.log('one');
-            break;    
+            console.log('one');  
+            break;  
         case '2':
-            console.log('two');
-            break; 
+            console.log('two'); 
+            break;
         case '3':
-            console.log('three');
-            break;       
+            console.log('three');  
+            break;   
         case '4':
-            console.log('four');
-            break;    
+            console.log('four'); 
+            break;  
         case '5':
-            console.log('five');
-            break;    
+            console.log('five');  
+            break; 
         case '6':
             console.log('six');
             break;    
         case '7':
             console.log('seven');
-            break; 
+            break;
         case '8':
-            console.log('eight');
-            break;       
+            console.log('eight'); 
+            break;     
         case '9':
             console.log('nine');
-            break;    
+            break;   
         case '10':
-            console.log('ten');
-            break; 
-        default:
-            console.log('I do not know that number');  
+            console.log('ten');  
+            break;
     }
 }
 
 
 async function main() {
-    const num = await input.text('Enter a number.');
-    say(num);
+    for (let i = 1; i <= 10; i += 1) {
+        say((i).toString());
+    }
 }
 
 main();
