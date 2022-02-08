@@ -1,5 +1,4 @@
 function recursion(i) {
-    if (i > 0);
     console.log(i)
     recursion(i + 1);
 }
