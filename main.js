@@ -7,9 +7,9 @@ const shopping = [
 
 async function main () {
     console.log('Here is your shopping list:');
-    console.log('============================');
+    console.log('===========================');
     for (food of shopping) {
-        console.log(' = ', food);
+        console.log(' = ' + food);
     }
 }
 
